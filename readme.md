@@ -11,12 +11,14 @@ Luarocks url: <https://luarocks.org/modules/rucciva/json-logic-lua>.
     - includes a lua table in the third parameter  under **custom_operations** key
     - the tables contains the operation name as the key and a function as a value
     - the first parameter of the function is a table with the following format
+    
     ```lua
     {
         data = data_passed_to_Apply_function
         opts = options_passed_to_Apply_function
     }
     ```
+    
 1. For working with a certain json library that try to distinguish between array and object, user of this library should add following functions under the third parameter:
     - a function to determine wether a table is an array or object
         - key : **is_array**
